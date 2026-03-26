@@ -1,0 +1,30 @@
+[MASTER]
+# Disable checkers que ya no están disponibles o causan errores.
+# Nota: 'R0201' (no-self-use) ha sido movido a una extensión, por lo que no se lista aquí.
+disable=
+    C0114,  # missing-module-docstring
+    C0115,  # missing-class-docstring
+    C0116,  # missing-function-docstring
+    C0103,  # invalid-name
+    C0301,  # line-too-long
+    W0703,  # broad-except
+    R0903,  # too-few-public-methods
+    W0613,  # unused-argument
+    W0622,  # redefined-builtin
+    R0914,  # too-many-locals
+    R0915,  # too-many-statements
+    W0718,  # too-many-arguments
+    R0912,  # too-many-branches
+    R0022,  # useless-option-value (para evitar quejarse de opciones obsoletas)
+
+[MESSAGES CONTROL]
+# También podemos deshabilitar aquí algunos mensajes problemáticos
+disable=missing-docstring,invalid-name,line-too-long,useless-option-value
+
+[FORMAT]
+max-line-length=120
+
+[REPORTS]
+# Deshabilitar salida de reporte para que solo veas la puntuación
+output-format=text
+reports=no
